@@ -1,4 +1,5 @@
 using Application.Models;
+using Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AmdbApi.Controllers;
@@ -8,13 +9,13 @@ namespace AmdbApi.Controllers;
 public class ProductionController : ControllerBase
 {
     [HttpPost]
-    public ProductionViewModel Add(ProductionViewModel model)
+    public Production Add(Production model)
     {
         return model;
     }
 
-    public List<ProductionViewModel> GetAll(ProductionFilter filter)
+    public List<Production> GetAll(ProductionFilter filter)
     {
-        return new List<ProductionViewModel>();
+        return new List<Production>();
     }
 }
